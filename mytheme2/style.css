@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --font-color-dark: #000;
+    --content-width: 1000px;
+}
+
+
+/*
+Theme Name: My Theme
+Theme URI: http://example.com/my-theme
+Description: A brief description of my theme.
+Author: Your Name
+Author URI: http://example.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mytheme
+*/
+
+
+body{
+    background-color: #F5F5F3;
+    margin: 0;
+
+}
+
+/* !*banner top*! */
+.site-message{
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    text-align: center;
+    background-color: #F5F5F3;
+    padding: 10px 0 10px 0;
+}
+
+.site-message p{
+    margin:0;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+}
+
+
+header {
+    height: 100px;
+    background-color: #F5F5F3;
+    border: 1px solid #E8E8E8;
+    justify-content: space-between;
+    display: flex;
+    align-items: center; 
+    margin: 2rem;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+.header-title h1 {
+    font-family: Times, sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+body > header > div.column-1.header-title a {
+    font-family: Times, sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: #1E1E1E;
+    padding: 2rem;
+    font-weight: 300;
+}
+
+.column-1 {
+    width: 20%;
+    margin-left:20px;
+}
+
+header .column-50{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main-navigation nav {
+    display: flex;
+}
+
+/* !* Meny alternativ *! */
+.menu-items, .login-items {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu-items li, .login-items li {
+    margin: 0 15px;
+    position: relative;
+}
+
+
+#primary-menu li a,
+#secondary-menu li a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+
+
+
+
+
+
+/* !* --- Main section *! */
+main {
+    width: var(--content-width);
+    margin-left: 80px;
+    margin-top: 10px;
+    min-height:200px;
+
+}
+
+footer {
+
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: aqua;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+footer section {
+    width: var(--content-width);
+    height: auto;
+    background-color: bisque;
+    margin: auto;
+    display: flex;
+}
+
+
+footer section .column {
+    width: 33%;
+    height: auto;
+    background-color: rgb(178, 226, 156);
+}
+
+footer section .column .category {
+    font-weight: 600;
+}
+
+footer section .column ul{
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+footer section .column ul li{
+    list-style: none;
+    position: relative;
+    
+}
+
+footer section .column ul li a{
+    text-decoration: none;
+    color: var(--font-color-dark);
+    line-height: 1;
+    padding-left: 35px;
+}
+
+footer section .column ul li.facebook{
+    background-color: cornflowerblue;
+}
+
+footer section .column ul li.facebook::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdb1PiCWsNhojALOLX3m68MxcBn_cUSKF95QmN2V0_6EVPqHKxpMN&usqp=CAE&s);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute
+}
+
+.space {
+    height: 7rem;
+}
+
+/* !*ny*! */
+
+.woocommerce-breadcrumb{
+   font-family: Poppins, sans-serif;
+    /* text-underline: none; */
+    color: grey;
+}
+
+
+.woocommerce div.product .product_title {
+    font-size: 64px;
+    color: #FFA500;
+}
+
+.woocommerce div.product .button {
+    background: #1E90FF;
+}
+
+.parent {
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+}
+
+.child1 {
+   /* !* width: 60%; */
+    flex: auto;
+    margin: 10px;
+    width: 100%;
+    flex: 1;
+}
+
+.child2 {
+    margin-left:20px;
+    width: fit-content;
+    /* flex:1; */
+    flex: 2;
+}
+
+.product_title {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: black;
+
+}
+.summary {
+    width: 700px;
+    overflow-wrap: break-word;
+}
+
+.entry-summary {
+    width: 35rem;
+}
+
+
+
+.woocommerce-product-details__short-description p {
+    font-family: Poppins, sans-serif;
+    color: #686363;
+    font-size: 14px;
+    margin-top: 3rem;
+}
+
+.price {
+    font-size: 20px;
+    color: #555;
+    font-family: Poppins, sans-serif;
+}
+
+.custom-discount-msg{
+    font-size: 12px;
+    color: #555;
+    font-family: Poppins, sans-serif;
+    margin-top: -15px;
+}
+
+/* !* variations *! */
+.label {
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    color: #555;
+    margin-top:2rem;
+}
+
+.toggle-button{
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: transparent;
+    border: 2px solid #E8E8E8;
+    border-radius: 15px;
+    margin-right: 1rem;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.single_add_to_cart_button{
+    background-color: #0a0000;
+    padding: 20px 60px 20px 60px;
+    border-radius: 2rem;
+    font-family: Poppins, sans-serif;
+    color:white;
+    font-size: 15px;
+}
+
+
+
+/* !* TABS *! */
+
+.woocommerce-tabs ul.tabs {
+    width: 100%;
+    float: none;
+    border: 0;
+    list-style: none;
+    padding: 0 0 0 0em;
+    margin: 0 0 1.618em;
+    overflow: hidden;
+    position: relative;
+}
+
+.woocommerce-tabs ul.tabs::before {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #E8E8E8;
+    z-index: 1;
+}
+
+.woocommerce-tabs ul.tabs li {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    padding: 0 1em;
+}
+
+.woocommerce-tabs ul.tabs li.active {
+    z-index: 2;
+    border-bottom: 2px solid #000000;
+}
+
+
+.woocommerce-tabs ul.tabs li a {
+    display: inline-block;
+    padding: .5em 0;
+    font-weight: 700;
+    color: #5d5d5d;
+    text-decoration: none;
+    outline: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.woocommerce-tabs ul.tabs li.active a {
+    color: inherit;
+    text-shadow: inherit;
+}
+.wc-tab {
+    float: none !important;
+    width: 100% !important;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+
